@@ -3,173 +3,153 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>مهرشاپ | فروشگاه آرایشی و بهداشتی</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <title>مهرشاپ | فروشگاه اینترنتی زیبایی</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- فونت وزیرمتن -->
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- 📢 نوار اطلاع‌رسانی -->
-  <div class="topbar">
-    <div class="container">
-      <span>🚚 ارسال رایگان بالای ۵۰۰ هزار تومان</span>
-      <span>💎 ضمانت اصالت کالا</span>
-      <span>📞 مشاوره رایگان: ۰۲۱-۱۲۳۴۵۶۷۸</span>
-    </div>
-  </div>
-
-  <!-- 🔝 هدر -->
+  <!-- ===== هدر اصلی ===== -->
   <header class="header" id="header">
-    <div class="container header-inner">
-      <a href="#" class="logo">
-        <span class="logo-icon">✿</span>
-        <span>مهرشاپ</span>
-      </a>
 
-      <nav class="nav">
-        <a href="#">آرایشی</a>
-        <a href="#">مراقبت پوست</a>
-        <a href="#">مراقبت مو</a>
-        <a href="#">عطر و ادکلن</a>
-        <a href="#">وبلاگ</a>
-      </nav>
-
-      <div class="header-actions">
-        <div class="search-box">
-          <input type="text" placeholder="جستجو در مهرشاپ..." />
-          <button>🔍</button>
-        </div>
-        <button class="icon-btn" title="ورود">👤</button>
-        <button class="icon-btn cart-btn" title="سبد خرید">
-          🛒 <span class="cart-count">۰</span>
-        </button>
+    <!-- نوار بالا -->
+    <div class="top-bar">
+      <div class="container top-bar__inner">
+        <span>🚚 ارسال رایگان برای خرید بالای ۵۰۰ هزار تومان</span>
+        <span>📞 پشتیبانی: ۰۲۱-۱۲۳۴۵۶۷۸</span>
       </div>
     </div>
+
+    <!-- هدر اصلی -->
+    <div class="header__main">
+      <div class="container header__inner">
+
+        <!-- دکمه منوی موبایل -->
+        <button class="hamburger" id="hamburger" aria-label="منو">
+          <span></span><span></span><span></span>
+        </button>
+
+        <!-- لوگو -->
+        <a href="#" class="logo">
+          <span class="logo__icon">✨</span>
+          <span class="logo__text">مهرشاپ</span>
+        </a>
+
+        <!-- جستجو -->
+        <form class="search" role="search">
+          <input type="text" class="search__input" id="searchInput"
+                 placeholder="جستجوی محصول، برند یا دسته‌بندی..." />
+          <button type="submit" class="search__btn" aria-label="جستجو">
+            <svg viewBox="0 0 24 24" width="20" height="20">
+              <path fill="currentColor"
+                d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0A4.5 4.5 0 1 1 14 9.5A4.5 4.5 0 0 1 9.5 14z"/>
+            </svg>
+          </button>
+          <!-- پیشنهادهای جستجو -->
+          <ul class="search__suggest" id="searchSuggest"></ul>
+        </form>
+
+        <!-- آیکون‌ها -->
+        <div class="header__actions">
+
+          <a href="#" class="action-btn" aria-label="علاقه‌مندی‌ها">
+            <svg viewBox="0 0 24 24" width="22" height="22">
+              <path fill="currentColor"
+                d="M12 21s-6.7-4.35-9.33-8.5C.9 9.8 2.5 6 6 6c2 0 3.3 1.2 4 2.2C10.7 7.2 12 6 14 6c3.5 0 5.1 3.8 3.33 6.5C18.7 16.65 12 21 12 21z"/>
+            </svg>
+            <span class="badge">۳</span>
+          </a>
+
+          <a href="#" class="action-btn" aria-label="سبد خرید">
+            <svg viewBox="0 0 24 24" width="22" height="22">
+              <path fill="currentColor"
+                d="M7 18a2 2 0 1 0 0 4a2 2 0 0 0 0-4zm10 0a2 2 0 1 0 0 4a2 2 0 0 0 0-4zM7.16 14.26l.03-.12l.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03L21 4H5.21L4.27 2H1v2h2l3.6 7.59l-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7.42c-.14 0-.25-.11-.26-.24z"/>
+            </svg>
+            <span class="badge">۲</span>
+          </a>
+
+          <a href="#" class="action-btn login-btn">
+            <svg viewBox="0 0 24 24" width="20" height="20">
+              <path fill="currentColor"
+                d="M12 12a5 5 0 1 0-5-5a5 5 0 0 0 5 5zm0 2c-3.33 0-10 1.67-10 5v3h20v-3c0-3.33-6.67-5-10-5z"/>
+            </svg>
+            <span>ورود | ثبت‌نام</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- منوی ناوبری -->
+    <nav class="nav" id="nav">
+      <div class="container nav__inner">
+
+        <div class="nav__categories">
+          <button class="nav__cat-btn" id="catBtn">
+            <svg viewBox="0 0 24 24" width="18" height="18">
+              <path fill="currentColor" d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/>
+            </svg>
+            دسته‌بندی محصولات
+          </button>
+
+          <!-- مگا منو -->
+          <div class="mega-menu" id="megaMenu">
+            <div class="mega-menu__col">
+              <h4>آرایش صورت</h4>
+              <a href="#">کرم پودر</a>
+              <a href="#">کانسیلر</a>
+              <a href="#">رژگونه</a>
+              <a href="#">هایلایتر</a>
+            </div>
+            <div class="mega-menu__col">
+              <h4>آرایش چشم</h4>
+              <a href="#">ریمل</a>
+              <a href="#">خط چشم</a>
+              <a href="#">سایه چشم</a>
+              <a href="#">مداد چشم</a>
+            </div>
+            <div class="mega-menu__col">
+              <h4>مراقبت پوست</h4>
+              <a href="#">سرم</a>
+              <a href="#">کرم آبرسان</a>
+              <a href="#">ضد آفتاب</a>
+              <a href="#">ماسک صورت</a>
+            </div>
+            <div class="mega-menu__col">
+              <h4>مراقبت مو</h4>
+              <a href="#">شامپو</a>
+              <a href="#">ماسک مو</a>
+              <a href="#">روغن مو</a>
+              <a href="#">سرم مو</a>
+            </div>
+            <div class="mega-menu__promo">
+              <img src="https://via.placeholder.com/200x180/E91E63/fff?text=تخفیف+ویژه"
+                   alt="تخفیف ویژه" />
+              <p>تا ۷۰٪ تخفیف</p>
+            </div>
+          </div>
+        </div>
+
+        <ul class="nav__links" id="navLinks">
+          <li><a href="#">صفحه اصلی</a></li>
+          <li><a href="#">پرفروش‌ها</a></li>
+          <li><a href="#">تخفیف‌ها</a></li>
+          <li><a href="#">برندها</a></li>
+          <li><a href="#">مقالات</a></li>
+          <li><a href="#">تماس با ما</a></li>
+        </ul>
+      </div>
+    </nav>
   </header>
 
-  <!-- 🖼️ بنر اصلی -->
-  <section class="hero">
-    <div class="container hero-inner">
-      <div class="hero-text">
-        <span class="hero-badge">✨ جدید در مهرشاپ</span>
-        <h1>زیبایی واقعی، از اینجا شروع می‌شود</h1>
-        <p>تا ۷۰٪ تخفیف روی برندهای اورجینال آرایشی و بهداشتی با ضمانت اصالت کالا</p>
-        <div class="hero-btns">
-          <a href="#" class="btn btn-primary">🛍️ خرید کن</a>
-          <a href="#" class="btn btn-outline">مشاهده تخفیف‌ها</a>
-        </div>
-      </div>
-      <div class="hero-image">
-        <div class="hero-blob"></div>
-        <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=600" alt="محصولات آرایشی" />
-      </div>
-    </div>
-  </section>
+  <!-- پس‌زمینه تاریک برای موبایل -->
+  <div class="overlay" id="overlay"></div>
 
-  <!-- ✅ نوار مزایا -->
-  <section class="trust-bar">
-    <div class="container trust-grid">
-      <div class="trust-item"><span>🚚</span><p>ارسال سریع<br><small>به سراسر کشور</small></p></div>
-      <div class="trust-item"><span>💎</span><p>ضمانت اصالت<br><small>محصولات اورجینال</small></p></div>
-      <div class="trust-item"><span>💬</span><p>مشاوره رایگان<br><small>بررسی قبل از خرید</small></p></div>
-      <div class="trust-item"><span>🔒</span><p>پرداخت امن<br><small>درگاه آنلاین</small></p></div>
-    </div>
-  </section>
+  <main style="min-height: 200vh; padding: 40px 20px; text-align: center;">
+    <h1>محتوای صفحه اینجا قرار می‌گیرد</h1>
+    <p>برای تست هدر Sticky، صفحه را اسکرول کنید.</p>
+  </main>
 
-  <!-- 🗂️ دسته‌بندی -->
-  <section class="categories">
-    <div class="container">
-      <h2 class="section-title">دسته‌بندی محصولات</h2>
-      <div class="categories-grid">
-        <a href="#" class="cat-item"><div class="cat-img">💄</div><span>آرایش لب</span></a>
-        <a href="#" class="cat-item"><div class="cat-img">👁️</div><span>آرایش چشم</span></a>
-        <a href="#" class="cat-item"><div class="cat-img">🧴</div><span>مراقبت پوست</span></a>
-        <a href="#" class="cat-item"><div class="cat-img">💇‍♀️</div><span>مراقبت مو</span></a>
-        <a href="#" class="cat-item"><div class="cat-img">🌸</div><span>عطر و ادکلن</span></a>
-        <a href="#" class="cat-item"><div class="cat-img">🧼</div><span>بهداشت شخصی</span></a>
-      </div>
-    </div>
-  </section>
-
-  <!-- 🔥 پرفروش‌ترین‌ها -->
-  <section class="products">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">پرفروش‌ترین‌ها</h2>
-        <a href="#" class="link-more">مشاهده همه ←</a>
-      </div>
-      <div class="swiper products-swiper">
-        <div class="swiper-wrapper" id="productsWrapper"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 💰 بنر تخفیف ویژه -->
-  <section class="promo">
-    <div class="container promo-inner">
-      <div>
-        <h2>🔥 تخفیف‌های ویژه امروز</h2>
-        <p>فقط تا پایان امروز فرصت دارید!</p>
-        <div class="countdown" id="countdown">
-          <div><span id="hh">۰۰</span><small>ساعت</small></div>
-          <div><span id="mm">۰۰</span><small>دقیقه</small></div>
-          <div><span id="ss">۰۰</span><small>ثانیه</small></div>
-        </div>
-      </div>
-      <a href="#" class="btn btn-light">مشاهده تخفیف‌ها</a>
-    </div>
-  </section>
-
-  <!-- 📝 مقالات -->
-  <section class="blog">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">مقالات وبسایت</h2>
-        <a href="#" class="link-more">همه مقالات ←</a>
-      </div>
-      <div class="blog-grid" id="blogGrid"></div>
-    </div>
-  </section>
-
-  <!-- 🔻 فوتر -->
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div>
-        <h3>مهرشاپ</h3>
-        <p>فروشگاه اینترنتی محصولات آرایشی و بهداشتی اورجینال با ضمانت اصالت کالا.</p>
-      </div>
-      <div>
-        <h4>دسترسی سریع</h4>
-        <ul>
-          <li><a href="#">درباره ما</a></li>
-          <li><a href="#">تماس با ما</a></li>
-          <li><a href="#">وبلاگ</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>خدمات مشتریان</h4>
-        <ul>
-          <li><a href="#">پیگیری سفارش</a></li>
-          <li><a href="#">رویه ارسال</a></li>
-          <li><a href="#">شرایط بازگشت</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>تماس با ما</h4>
-        <p>📞 ۰۲۱-۱۲۳۴۵۶۷۸</p>
-        <p>✉️ info@mehrbeautyshop.com</p>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© ۱۴۰۴ مهرشاپ — تمامی حقوق محفوظ است.</p>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
