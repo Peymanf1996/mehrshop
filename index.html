@@ -1,1 +1,175 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>مهرشاپ | فروشگاه آرایشی و بهداشتی</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
+  <!-- 📢 نوار اطلاع‌رسانی -->
+  <div class="topbar">
+    <div class="container">
+      <span>🚚 ارسال رایگان بالای ۵۰۰ هزار تومان</span>
+      <span>💎 ضمانت اصالت کالا</span>
+      <span>📞 مشاوره رایگان: ۰۲۱-۱۲۳۴۵۶۷۸</span>
+    </div>
+  </div>
+
+  <!-- 🔝 هدر -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        <span class="logo-icon">✿</span>
+        <span>مهرشاپ</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#">آرایشی</a>
+        <a href="#">مراقبت پوست</a>
+        <a href="#">مراقبت مو</a>
+        <a href="#">عطر و ادکلن</a>
+        <a href="#">وبلاگ</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="search-box">
+          <input type="text" placeholder="جستجو در مهرشاپ..." />
+          <button>🔍</button>
+        </div>
+        <button class="icon-btn" title="ورود">👤</button>
+        <button class="icon-btn cart-btn" title="سبد خرید">
+          🛒 <span class="cart-count">۰</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 🖼️ بنر اصلی -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <span class="hero-badge">✨ جدید در مهرشاپ</span>
+        <h1>زیبایی واقعی، از اینجا شروع می‌شود</h1>
+        <p>تا ۷۰٪ تخفیف روی برندهای اورجینال آرایشی و بهداشتی با ضمانت اصالت کالا</p>
+        <div class="hero-btns">
+          <a href="#" class="btn btn-primary">🛍️ خرید کن</a>
+          <a href="#" class="btn btn-outline">مشاهده تخفیف‌ها</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="hero-blob"></div>
+        <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=600" alt="محصولات آرایشی" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ نوار مزایا -->
+  <section class="trust-bar">
+    <div class="container trust-grid">
+      <div class="trust-item"><span>🚚</span><p>ارسال سریع<br><small>به سراسر کشور</small></p></div>
+      <div class="trust-item"><span>💎</span><p>ضمانت اصالت<br><small>محصولات اورجینال</small></p></div>
+      <div class="trust-item"><span>💬</span><p>مشاوره رایگان<br><small>بررسی قبل از خرید</small></p></div>
+      <div class="trust-item"><span>🔒</span><p>پرداخت امن<br><small>درگاه آنلاین</small></p></div>
+    </div>
+  </section>
+
+  <!-- 🗂️ دسته‌بندی -->
+  <section class="categories">
+    <div class="container">
+      <h2 class="section-title">دسته‌بندی محصولات</h2>
+      <div class="categories-grid">
+        <a href="#" class="cat-item"><div class="cat-img">💄</div><span>آرایش لب</span></a>
+        <a href="#" class="cat-item"><div class="cat-img">👁️</div><span>آرایش چشم</span></a>
+        <a href="#" class="cat-item"><div class="cat-img">🧴</div><span>مراقبت پوست</span></a>
+        <a href="#" class="cat-item"><div class="cat-img">💇‍♀️</div><span>مراقبت مو</span></a>
+        <a href="#" class="cat-item"><div class="cat-img">🌸</div><span>عطر و ادکلن</span></a>
+        <a href="#" class="cat-item"><div class="cat-img">🧼</div><span>بهداشت شخصی</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔥 پرفروش‌ترین‌ها -->
+  <section class="products">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">پرفروش‌ترین‌ها</h2>
+        <a href="#" class="link-more">مشاهده همه ←</a>
+      </div>
+      <div class="swiper products-swiper">
+        <div class="swiper-wrapper" id="productsWrapper"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 💰 بنر تخفیف ویژه -->
+  <section class="promo">
+    <div class="container promo-inner">
+      <div>
+        <h2>🔥 تخفیف‌های ویژه امروز</h2>
+        <p>فقط تا پایان امروز فرصت دارید!</p>
+        <div class="countdown" id="countdown">
+          <div><span id="hh">۰۰</span><small>ساعت</small></div>
+          <div><span id="mm">۰۰</span><small>دقیقه</small></div>
+          <div><span id="ss">۰۰</span><small>ثانیه</small></div>
+        </div>
+      </div>
+      <a href="#" class="btn btn-light">مشاهده تخفیف‌ها</a>
+    </div>
+  </section>
+
+  <!-- 📝 مقالات -->
+  <section class="blog">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">مقالات وبسایت</h2>
+        <a href="#" class="link-more">همه مقالات ←</a>
+      </div>
+      <div class="blog-grid" id="blogGrid"></div>
+    </div>
+  </section>
+
+  <!-- 🔻 فوتر -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>مهرشاپ</h3>
+        <p>فروشگاه اینترنتی محصولات آرایشی و بهداشتی اورجینال با ضمانت اصالت کالا.</p>
+      </div>
+      <div>
+        <h4>دسترسی سریع</h4>
+        <ul>
+          <li><a href="#">درباره ما</a></li>
+          <li><a href="#">تماس با ما</a></li>
+          <li><a href="#">وبلاگ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>خدمات مشتریان</h4>
+        <ul>
+          <li><a href="#">پیگیری سفارش</a></li>
+          <li><a href="#">رویه ارسال</a></li>
+          <li><a href="#">شرایط بازگشت</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>تماس با ما</h4>
+        <p>📞 ۰۲۱-۱۲۳۴۵۶۷۸</p>
+        <p>✉️ info@mehrbeautyshop.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© ۱۴۰۴ مهرشاپ — تمامی حقوق محفوظ است.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
