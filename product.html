@@ -1,1 +1,259 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>رژ لب مدادی گلدن رز | مهرشاپ</title>
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="product.css" />
+</head>
+<body>
 
+  <!-- 🔝 هدر (همون هدر قبلی) -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">✿</span>
+        <span>مهرشاپ</span>
+      </a>
+      <nav class="nav">
+        <a href="#">آرایشی</a>
+        <a href="#">مراقبت پوست</a>
+        <a href="#">مراقبت مو</a>
+        <a href="#">عطر و ادکلن</a>
+      </nav>
+      <div class="header-actions">
+        <div class="search-box">
+          <input type="text" placeholder="جستجو..." />
+          <button>🔍</button>
+        </div>
+        <button class="icon-btn">👤</button>
+        <button class="icon-btn cart-btn">
+          🛒 <span class="cart-count">۰</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 🧭 بردکرامب -->
+  <div class="breadcrumb-wrap">
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="index.html">خانه</a>
+        <span>/</span>
+        <a href="#">آرایش لب</a>
+        <span>/</span>
+        <a href="#">گلدن رز</a>
+        <span>/</span>
+        <span class="current">رژ لب مدادی مات Crayon</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- 🛍️ بخش اصلی محصول -->
+  <section class="product-detail">
+    <div class="container product-detail-grid">
+
+      <!-- 🖼️ گالری تصاویر -->
+      <div class="product-gallery">
+        <div class="gallery-thumbs" id="thumbs">
+          <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=200" class="active" alt="" />
+          <img src="https://images.unsplash.com/photo-1631730359585-38a4935cbec4?w=200" alt="" />
+          <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=200" alt="" />
+          <img src="https://images.unsplash.com/photo-1596704017254-9b121068fb31?w=200" alt="" />
+        </div>
+        <div class="gallery-main" id="mainImage">
+          <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=700" alt="رژ لب" />
+          <span class="zoom-hint">🔍 برای بزرگنمایی کلیک کنید</span>
+        </div>
+      </div>
+
+      <!-- 📋 اطلاعات محصول -->
+      <div class="product-info-wrap">
+
+        <div class="product-head">
+          <span class="badge-new">جدید</span>
+          <span class="brand-link">گلدن رز</span>
+          <h1>رژ لب مدادی گلدن رز مدل مات Crayon وزن ۴ گرم</h1>
+          <div class="rating">
+            <span class="stars">⭐⭐⭐⭐⭐</span>
+            <span class="rating-text">۴.۸ از ۵ (۲۳ نظر)</span>
+            <span class="divider">|</span>
+            <span class="sold">۱۲۴ فروش موفق</span>
+          </div>
+        </div>
+
+        <!-- ویژگی‌های سریع -->
+        <ul class="quick-features">
+          <li>✨ ماندگاری بالا تا ۸ ساعت</li>
+          <li>💧 فرمول آبرسان و غیرخشک‌کننده</li>
+          <li>🎨 پیگمنت رنگی غنی</li>
+          <li>🇩🇪 ساخت آلمان</li>
+        </ul>
+
+        <!-- انتخاب رنگ -->
+        <div class="option-group">
+          <label>انتخاب رنگ:</label>
+          <div class="color-options">
+            <button class="color-swatch active" style="background:#B02A5B" data-name="قرمز تیره"></button>
+            <button class="color-swatch" style="background:#E91E63" data-name="صورتی"></button>
+            <button class="color-swatch" style="background:#C9A961" data-name="نود طلایی"></button>
+            <button class="color-swatch" style="background:#8B4513" data-name="قهوه‌ای"></button>
+          </div>
+          <span class="selected-color">رنگ انتخابی: <b>قرمز تیره</b></span>
+        </div>
+
+        <!-- قیمت -->
+        <div class="price-box">
+          <div class="price-main">
+            <span class="price-old">۲۱۶,۰۰۰ تومان</span>
+            <span class="discount-badge">۳۶٪ تخفیف</span>
+          </div>
+          <div class="price-new">۱۳۸,۷۵۰ <small>تومان</small></div>
+
+          <div class="installment">
+            <span>💳 یا ۴ قسط ماهانه <b>۱۳۸,۷۵۰ تومان</b></span>
+            <small>بدون سود، چک و ضامن (اسنپ‌پی)</small>
+          </div>
+        </div>
+
+        <!-- افزودن به سبد -->
+        <div class="add-to-cart-wrap">
+          <div class="qty-selector">
+            <button onclick="changeQty(-1)">−</button>
+            <input type="text" id="qty" value="۱" readonly />
+            <button onclick="changeQty(1)">+</button>
+          </div>
+          <button class="btn btn-primary big" onclick="addToCart()">
+            🛒 افزودن به سبد خرید
+          </button>
+          <button class="icon-action" title="افزودن به علاقه‌مندی‌ها">❤️</button>
+          <button class="icon-action" title="مقایسه">⚖️</button>
+        </div>
+
+        <!-- نوار مزایا -->
+        <div class="product-trust">
+          <div><span>🚚</span><p>ارسال سریع<small>تهران: امروز</small></p></div>
+          <div><span>💎</span><p>ضمانت اصالت<small>۱۰۰٪ اورجینال</small></p></div>
+          <div><span>↩️</span><p>۷ روز مرجوعی<small>بدون قید و شرط</small></p></div>
+          <div><span>🔒</span><p>پرداخت امن<small>درگاه معتبر</small></p></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 📑 تب‌های اطلاعات -->
+  <section class="product-tabs">
+    <div class="container">
+      <div class="tabs-header">
+        <button class="tab-btn active" data-tab="desc">توضیحات محصول</button>
+        <button class="tab-btn" data-tab="specs">مشخصات فنی</button>
+        <button class="tab-btn" data-tab="reviews">نظرات کاربران (۲۳)</button>
+      </div>
+
+      <div class="tab-content active" id="desc">
+        <h3>رژ لب مدادی گلدن رز مدل مات Crayon</h3>
+        <p>
+          رژ لب مدادی گلدن رز مدل مات با فرمول ویژه‌ای که دارد، ماندگاری بالایی روی لب‌ها ایجاد می‌کند
+          و از خشک شدن لب‌ها جلوگیری می‌کند. پیگمنت رنگی غنی این محصول باعث می‌شود تنها با یک لایه،
+          رنگی یکدست و درخشان روی لب‌ها ایجاد شود.
+        </p>
+        <ul>
+          <li>وزن: ۴ گرم</li>
+          <li>نوع: مدادی (Crayon)</li>
+          <li>فینیش: مات (Matte)</li>
+          <li>ماندگاری: تا ۸ ساعت</li>
+          <li>ضدآب و ضد انتقال</li>
+          <li>مناسب برای انواع پوست</li>
+        </ul>
+      </div>
+
+      <div class="tab-content" id="specs">
+        <table class="specs-table">
+          <tr><td>برند</td><td>Golden Rose</td></tr>
+          <tr><td>مدل</td><td>Crayon Matte</td></tr>
+          <tr><td>وزن</td><td>۴ گرم</td></tr>
+          <tr><td>رنگ‌بندی</td><td>۴ رنگ</td></tr>
+          <tr><td>کشور سازنده</td><td>آلمان</td></tr>
+          <tr><td>کد محصول</td><td>GR-CR-001</td></tr>
+        </table>
+      </div>
+
+      <div class="tab-content" id="reviews">
+        <div class="review-card">
+          <div class="review-head">
+            <span class="avatar">م</span>
+            <div>
+              <b>مریم رضایی</b>
+              <span class="stars">⭐⭐⭐⭐⭐</span>
+            </div>
+            <span class="review-date">۲ روز پیش</span>
+          </div>
+          <p>رنگش خیلی قشنگه و موندگاریش واقعاً عالیه. حتماً دوباره می‌خرم. 💕</p>
+        </div>
+        <div class="review-card">
+          <div class="review-head">
+            <span class="avatar">س</span>
+            <div>
+              <b>سارا احمدی</b>
+              <span class="stars">⭐⭐⭐⭐</span>
+            </div>
+            <span class="review-date">۱ هفته پیش</span>
+          </div>
+          <p>کیفیتش خوبه ولی کاش رنگ‌بندی بیشتری داشت.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔥 محصولات مشابه -->
+  <section class="products similar-products">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">محصولات مشابه</h2>
+        <a href="#" class="link-more">مشاهده همه ←</a>
+      </div>
+      <div class="swiper products-swiper">
+        <div class="swiper-wrapper" id="similarWrapper"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔻 فوتر -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>مهرشاپ</h3>
+        <p>فروشگاه اینترنتی محصولات آرایشی و بهداشتی اورجینال.</p>
+      </div>
+      <div>
+        <h4>دسترسی سریع</h4>
+        <ul><li><a href="#">درباره ما</a></li><li><a href="#">تماس با ما</a></li></ul>
+      </div>
+      <div>
+        <h4>خدمات مشتریان</h4>
+        <ul><li><a href="#">پیگیری سفارش</a></li><li><a href="#">رویه ارسال</a></li></ul>
+      </div>
+      <div>
+        <h4>تماس با ما</h4>
+        <p>📞 ۰۲۱-۱۲۳۴۵۶۷۸</p>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© ۱۴۰۴ مهرشاپ</p></div>
+  </footer>
+
+  <!-- 🔍 لایت‌باکس زوم -->
+  <div class="lightbox" id="lightbox">
+    <span class="close">&times;</span>
+    <img src="" id="lightboxImg" alt="" />
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="product.js"></script>
+</body>
+</html>
